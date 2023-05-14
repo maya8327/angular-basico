@@ -1,0 +1,10 @@
+<h3>Personajes</h3>
+<hr>
+<ul class="list-group">
+  <li *ngFor="let heroe of personajes; let i = index" class="list-group-item">
+    <span class="text-primary">{{ i + 1 }}. </span>
+    <span>{{ heroe. nombre }} - </span>
+    <strong>Power: </strong>
+    <span>{{ heroe.poder | number }}</span>
+  </li>
+</ul>

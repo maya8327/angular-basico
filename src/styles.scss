@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 * {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
@@ -42,4 +44,22 @@
 
   .bold {
     font-weight: bold;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row .col {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .row .col:last-of-type {
+    margin-right: 0;
+  }
+
+  input {
+    display: block;
+    margin: 5px;
   }
